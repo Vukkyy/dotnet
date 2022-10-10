@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header {
+    background-color: #00a8f3;
+    background-image: url("/assets/images/bg.png");
+}
+header #vukky {
+    position: relative;
+    left: 5%;
+    image-rendering: pixelated;
+    filter: drop-shadow(1px 1px 7px);
+}
+
+nav {
+    position: relative;
+    top: -10px;
+    background-color: #0081ff;
+    padding: 5px;
+    filter: drop-shadow(1px 1px 7px);
+}
+
+/* only do cool (but unnecessary animations) if the user hasn't requested them to be disabled */
+@media (prefers-reduced-motion: no-preference) {
+    header { animation: slidetotheleft 90s infinite linear; }
+}
+
+@keyframes slidetotheleft {
+    from { background-position: top right; }
+    to { background-position: top left; }
+}
