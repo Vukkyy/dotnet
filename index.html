@@ -4,11 +4,13 @@
         <link rel="preload" as="image" href="/img/petvukky.gif">
         <script src="/index.js"></script>
         <style>
-            #vukky {
+            #vwrap {
                 position: fixed;
-                top: 56%;
+                top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+            }
+            #vukky {
                 cursor: none;
                 z-index: 9999;
             }
@@ -75,6 +77,8 @@
         <div id="counter">
             <!--<img src="https://learn.microsoft.com/en-gb/training/azure-devops/shared/media/callout-01.png" height="256">-->
         </div>
-        <img id="vukky" src="/img/vukkyhappy.png" onmouseover="counterHandler();this.src = '/img/petvukky.gif'" onmouseout="clearTimeout(window.counterer);window.countercount = 0;document.querySelector('#counter').innerHTML = '';this.src = '/img/vukkyhappy.png'">
+        <div id="vwrap">
+            <img id="vukky" src="/img/vukkyhappy.png" onmouseover="counterHandler();this.src = '/img/petvukky.gif'" onmouseout="clearTimeout(window.counterer);window.countercount = 0;document.querySelector('#counter').innerHTML = '';this.src = '/img/vukkyhappy.png'">
+        </div>
     </body>
 </html>
