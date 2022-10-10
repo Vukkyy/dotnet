@@ -1,2 +1,18 @@
-<h1>Vukky.net</h1>
-Woo
+<html>
+    <head>
+        <title>It's a Vukky!</title>
+        <script src="/index.js"></script>
+        <style>
+            #vukky {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: grab;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="vukky" src="/img/vukkyhappy.png" onmouseover="this.src = '/img/petvukky.gif'" onmouseout="this.src = '/img/vukkyhappy.png'">
+    </body>
+</html>
