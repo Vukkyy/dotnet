@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/mystyle.css">
+    <link rel="stylesheet" href="/assets/css/rouge.css">
+    {% seo %}
   </head>
   <body>
     <header>
       <picture id="vukky">
-        <source srcset="/assets/images/vukky.gif" media="(prefers-reduced-motion: no-preference)">
+        {% unless page.animvukky == false %}<source srcset="/assets/images/vukky.gif" media="(prefers-reduced-motion: no-preference)">{% endunless %}
         <img src="/assets/images/vukkystill.gif" width="160">
       </picture>
     </header>
@@ -17,12 +19,9 @@
       <a href="/">Home</a>
       <a href="/blog/">Blog</a>
     </nav>
-    <h1>{{ page.title }}</h1>
     <section>
+      <h1>{{ page.title }}</h1>
       {{ content }}
     </section>
-    <footer>
-      &copy; to me
-    </footer>
   </body>
 </html>

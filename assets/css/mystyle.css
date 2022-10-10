@@ -3,6 +3,9 @@
     padding: 0;
     font-family: sans-serif;
 }
+pre, code, code span {
+    font-family: monospace;
+}
 header {
     background-color: #00a8f3;
     background-image: url("/assets/images/bg.png");
@@ -12,6 +15,7 @@ header #vukky {
     left: 5%;
     image-rendering: pixelated;
     filter: drop-shadow(1px 1px 7px);
+    cursor: grab;
 }
 
 nav {
@@ -20,6 +24,10 @@ nav {
     background-color: #0081ff;
     padding: 5px;
     filter: drop-shadow(1px 1px 7px);
+}
+
+section {
+    padding-left: 5px;
 }
 
 /* only do cool (but unnecessary animations) if the user hasn't requested them to be disabled */
