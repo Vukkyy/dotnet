@@ -1,0 +1,9 @@
+---
+layout: default
+title:  "Welcome to the new blog for the Bukkies!"
+date: 2022-10-10 11:18:55 +0200
+---
+
+As you might remember, I had a blog before! Then I didn't.
+
+But now it's back! So if I remember to write things, you can check back for more writings.
