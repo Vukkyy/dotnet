@@ -14,7 +14,8 @@ permalink: /blog/
 
 <p><img id="feedicon" src="/assets/images/feedicons/25.png"> <a href="/feed.xml">Subscribe with RSS</a></p>
 <script>
-document.querySelector("#feedicon").src = `/assets/images/feedicons/${Math.floor(Math.random() * 50) + 1}.png`
+document.querySelector("#feedicon").src = `/assets/images/feedicons/${Math.floor(Math.random() * 50) + 1}.png`;
+document.querySelector("section > h1").classList.add("noshell");
 </script>
 
 <ul>

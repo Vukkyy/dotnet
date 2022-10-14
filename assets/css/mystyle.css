@@ -34,6 +34,10 @@ section {
     padding-left: 5px;
 }
 
+.noshell .nutshell-heading-embed {
+    display: none;
+}
+
 /* only do cool (but unnecessary animations) if the user hasn't requested them to be disabled */
 @media (prefers-reduced-motion: no-preference) {
     header { animation: slidetotheleft 90s infinite linear; }
